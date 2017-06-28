@@ -1,0 +1,9 @@
+.ListingItem{
+  border: 1px;
+  border-color: lightgrey;
+  height: auto;
+}
+
+.ListingItem .actionButton{
+  background-color: green;
+}
