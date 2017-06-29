@@ -1,9 +1,102 @@
 .ListingItem{
   border: 1px;
-  border-color: lightgrey;
-  height: auto;
+  border-radius: 1px;
+  border-color: #bfbfbf;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  flex-direction: column;
+  border-style: solid;
+  height: 448px;
 }
 
 .ListingItem .actionButton{
-  background-color: green;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 70px;
+  height: 40px;
+  border-style: hidden;
+}
+
+.title_image {
+   position: relative;
+}
+
+.title_image img {
+  width: auto;
+  max-width: 400px;
+}
+.listing_details{
+  margin-top: 30px;
+  display: block;
+  width: inherit;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.listing_title{
+  text-align: left;
+  font-weight: bold;
+font-family: Verdana;
+font-size: 11pt;
+color: #565656;
+padding-bottom: 10px;
+}
+.listing_address{
+  text-align: left;
+  color: rgb(189, 189, 189);
+font-family: Verdana;
+font-weight: bold;
+font-size: 8pt;
+margin-top: 10px;
+}
+
+.listing_bottom{
+  margin-top: 45px;
+}
+
+.listing_bottom_right{
+float: right;
+display: flex;
+}
+
+.listing_price{
+  float: left;
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.listing_space{
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-bottom: 60px;
+  font-family: Verdana;
+  font-size: 10pt;
+  color: grey;
+}
+
+.listing_rooms{
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: Verdana;
+  font-size: 10pt;
+  color: grey;
+}
+
+.listing_seperator{
+  border: 0px;
+  border-left: 0.2px;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.38);
+  height: 24px;
+  width: 1px;
 }

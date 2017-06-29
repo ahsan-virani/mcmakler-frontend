@@ -77,7 +77,19 @@ module.exports = function(proxy, allowedHost) {
       disableDotRule: true,
     },
     public: allowedHost,
-    proxy,
+    proxy: {
+      "/v1/advertisements": {
+        target: 'https://api.mcmakler.de/v1/advertisements',
+        protocol: 'https',
+        secure: false,
+        ignorePath: true,
+        changeOrigin: true,
+        // rewrite: function(req, options) {
+        //   //you can handle rewrite here if you need to
+        // }
+      },
+
+    },
     setup(app) {
       // This lets us open files from the runtime error overlay.
       app.use(errorOverlayMiddleware());

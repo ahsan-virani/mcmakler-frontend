@@ -1,0 +1,14 @@
+.listingContainer{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow-x: scroll;
+  flex-direction: row;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .listingContainer {
+        flex-direction: column;
+    }
+}

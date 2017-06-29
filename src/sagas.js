@@ -14,10 +14,12 @@ function* loadAds() {
     yield put(sendingRequest(true));
     const adsResponse = yield call(adsService);
     if (adsResponse) {
-      yield put(adsLoaded(adsResponse.advertisments));
+      console.log('adsResponse', adsResponse);
+      yield put(adsLoaded(adsResponse));
       yield put(clearError());
       yield put(sendingRequest(false));
     } else {
+      yield put(sendingRequest(false));
       yield put(requestError('Request returned nothing'));
     }
   } catch (e) {
